@@ -1,0 +1,40 @@
+{
+  "name": "human-anatomy",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "models:optimize": "node pipeline/optimize_models.mjs && node pipeline/models_manifest.mjs",
+    "models:lod": "node pipeline/make_lods.mjs && node pipeline/models_manifest.mjs",
+    "anatomy:build": "node pipeline/build_anatomy.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@react-three/postprocessing": "^2.19.1",
+    "postprocessing": "^6.39.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "three": "^0.186.1",
+    "three-mesh-bvh": "^0.7.8",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@gltf-transform/core": "^4.5.1",
+    "@gltf-transform/extensions": "^4.5.1",
+    "@gltf-transform/functions": "^4.5.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^18.3.31",
+    "@types/react-dom": "^18.3.7",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "meshoptimizer": "^1.3.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.8",
+    "vite": "^6.4.5"
+  }
+}

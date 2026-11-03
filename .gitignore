@@ -1,0 +1,23 @@
+# Dependências e build
+node_modules/
+dist/
+*.tsbuildinfo
+
+# Arquivos-fonte brutos do Z-Anatomy (.blend etc.) — grandes demais para o git
+pipeline/source/
+
+# Blender portátil instalado localmente (~1,2 GB) — ver CLAUDE.md
+pipeline/blender/
+
+# Logs e ambiente
+*.log
+npm-debug.log*
+.env
+.env.local
+
+# Editor / SO
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
