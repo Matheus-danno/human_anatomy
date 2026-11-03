@@ -1,0 +1,230 @@
+{
+  "Antitragus": { "pt": "Antítrago" },
+  "Perionyx": { "pt": "Perioníquio" },
+  "Incus": { "pt": "Bigorna" },
+  "Atlas (C1)": { "pt": "Atlas (C1)" },
+  "Vertebra T10": { "pt": "Vértebra T10" },
+  "Vertebra T11": { "pt": "Vértebra T11" },
+  "Talus": { "pt": "Tálus" },
+  "Ulna": { "pt": "Ulna" },
+  "Rotatores": { "pt": "Músculos rotadores" },
+  "Linea alba": { "pt": "Linha alba" },
+  "Fascia lata": { "pt": "Fáscia lata" },
+  "Semimembranosus bursa": { "pt": "Bolsa do músculo semimembranáceo" },
+
+  "Flexor carpi radialis": { "pt": "Músculo flexor radial do carpo" },
+  "Extensor digitorum": { "pt": "Músculo extensor dos dedos" },
+  "Extensor carpi radialis longus": { "pt": "Músculo extensor radial longo do carpo" },
+  "Extensor carpi radialis brevis": { "pt": "Músculo extensor radial curto do carpo" },
+  "Extensor digiti minimi": { "pt": "Músculo extensor do dedo mínimo" },
+  "Supinator": { "pt": "Músculo supinador" },
+  "Extensor indicis": { "pt": "Músculo extensor do indicador" },
+  "Extensor pollicis longus": { "pt": "Músculo extensor longo do polegar" },
+  "Psoas major": { "pt": "Músculo psoas maior" },
+  "Adductor longus": { "pt": "Músculo adutor longo" },
+  "Extensor digitorum longus": { "pt": "Músculo extensor longo dos dedos" },
+  "Extensor hallucis longus": { "pt": "Músculo extensor longo do hálux" },
+  "Flexor digitorum longus": { "pt": "Músculo flexor longo dos dedos" },
+  "Flexor hallucis longus": { "pt": "Músculo flexor longo do hálux" },
+  "Extensor digitorum brevis": { "pt": "Músculo extensor curto dos dedos" },
+  "Extensor hallucis brevis": { "pt": "Músculo extensor curto do hálux" },
+  "Flexor digitorum brevis": { "pt": "Músculo flexor curto dos dedos" },
+  "(Opponens digiti minimi muscle of foot)": {
+    "pt": "(Músculo oponente do dedo mínimo do pé)",
+    "nota": "parênteses do Z-Anatomy indicam estrutura inconstante"
+  },
+  "Rhomboid major muscle": { "pt": "Músculo romboide maior" },
+  "Serratus posterior inferior muscle": { "pt": "Músculo serrátil posterior inferior" },
+  "Serratus posterior superior muscle": { "pt": "Músculo serrátil posterior superior" },
+  "Dorsal parts of lateral intertransversarii lumborum muscles": {
+    "pt": "Partes dorsais dos músculos intertransversários laterais do lombo"
+  },
+  "Ventral parts of lateral intertransversarii lumborum muscles": {
+    "pt": "Partes ventrais dos músculos intertransversários laterais do lombo"
+  },
+  "Anterior meniscotibial ligament (Medial meniscus)": { "pt": "Ligamento meniscotibial anterior (menisco medial)" },
+
+  "Inferior papillary muscle of right ventricle": { "pt": "Músculo papilar inferior do ventrículo direito" },
+  "Anterior papillary muscle of right ventricle": { "pt": "Músculo papilar anterior do ventrículo direito" },
+  "Left atrium": { "pt": "Átrio esquerdo", "latim": "Atrium sinistrum" },
+  "Superior ulnar collateral artery": { "pt": "Artéria colateral ulnar superior" },
+  "Inferior medial genicular artery": { "pt": "Artéria inferior medial do joelho" },
+  "Inferior lateral genicular artery": { "pt": "Artéria inferior lateral do joelho" },
+  "Middle genicular artery": { "pt": "Artéria média do joelho", "latim": "Arteria media genus" },
+  "Superior basal vein of right lung": { "pt": "Veia basal superior do pulmão direito" },
+  "Superolateral superficial inguinal nodes": { "pt": "Linfonodos inguinais superficiais superolaterais" },
+  "(Posterior tibial node)": { "pt": "(Linfonodo tibial posterior)" },
+  "Palm": { "pt": "Palma" },
+  "Olive": { "pt": "Oliva" },
+  "Investing abdominal fascia": { "pt": "Fáscia de revestimento do abdome", "nota": "TA2 em espanhol" },
+  "Splenic artery": { "pt": "Artéria esplênica", "nota": "TA2 em latim" },
+  "Precaval nodes": { "pt": "Linfonodos pré-cavais" },
+  "Retrocaval nodes": { "pt": "Linfonodos retrocavais" },
+  "Pre-aortic nodes": { "pt": "Linfonodos pré-aórticos" },
+  "Retro-aortic nodes": { "pt": "Linfonodos retroaórticos" },
+  "Splenic nodes": { "pt": "Linfonodos esplênicos" },
+  "Precaecal nodes": { "pt": "Linfonodos pré-cecais" },
+  "Median sacral nodes": { "pt": "Linfonodos sacrais medianos" },
+  "Prevesical nodes": { "pt": "Linfonodos pré-vesicais" },
+  "Postvesical nodes": { "pt": "Linfonodos retrovesicais" },
+  "Prepericardial nodes": { "pt": "Linfonodos pré-pericárdicos" },
+
+  "Tentorium cerebelli": { "pt": "Tentório do cerebelo" },
+  "Falx cerebri": { "pt": "Foice do cérebro" },
+  "Precuneus": { "pt": "Pré-cúneo" },
+  "Cuneus": { "pt": "Cúneo" },
+  "Putamen": { "pt": "Putame" },
+  "Globus pallidus": { "pt": "Globo pálido" },
+  "Fornix": { "pt": "Fórnice" },
+  "Stria terminalis": { "pt": "Estria terminal" },
+  "Habenula": { "pt": "Habênula" },
+  "Thalamus": { "pt": "Tálamo" },
+  "Stria medullaris thalami": { "pt": "Estria medular do tálamo" },
+  "Pons": { "pt": "Ponte" },
+  "Chorda tympani": { "pt": "Corda do tímpano" },
+  "Cauda equina": { "pt": "Cauda equina" },
+  "Flocculus": { "pt": "Flóculo" },
+  "Declive": { "pt": "Declive" },
+  "Culmen": { "pt": "Cúlmen" },
+  "Retina": { "pt": "Retina" },
+  "Nucleus proprius": { "pt": "Núcleo próprio" },
+  "Pleura": { "pt": "Pleura" },
+  "Ureter": { "pt": "Ureter" },
+  "Testis": { "pt": "Testículo" },
+  "Ductus deferens": { "pt": "Ducto deferente" },
+  "Glans penis": { "pt": "Glande do pênis" },
+  "Sciatic nerve": {
+    "pt": "Nervo isquiático",
+    "sinonimos": ["Nervo ciático"],
+    "nota": "TA2 traz \"Nervo ciático\" (termo popular); a SBA usa \"isquiático\""
+  },
+
+  "Frenula capsulae": { "pt": "Frênulos da cápsula", "latim": "Frenula capsulae", "revisar": true },
+  "Subcutaneous acromial bursa": { "pt": "Bolsa subcutânea acromial", "latim": "Bursa subcutanea acromialis" },
+  "Coracobrachial bursa": { "pt": "Bolsa coracobraquial", "latim": "Bursa musculi coracobrachialis" },
+  "Trochanteric bursa of gluteus medius muscle": {
+    "pt": "Bolsa trocantérica do músculo glúteo médio",
+    "latim": "Bursa trochanterica musculi glutei medii"
+  },
+  "Subfacial prepatellar bursa": {
+    "pt": "Bolsa pré-patelar subfascial",
+    "latim": "Bursa subfascialis prepatellaris",
+    "nota": "\"Subfacial\" no Z-Anatomy é erro de digitação de \"subfascial\""
+  },
+  "Cruciform part of fibrous sheath of digit of hand": {
+    "pt": "Parte cruciforme da bainha fibrosa dos dedos da mão",
+    "latim": "Pars cruciformis vaginae fibrosae digitorum manus"
+  },
+  "Tendon sheath of extensor digiti minimi manus": {
+    "pt": "Bainha tendínea do músculo extensor do dedo mínimo",
+    "latim": "Vagina tendinis musculi extensoris digiti minimi"
+  },
+  "Tendon sheath of extensors carpi radialis": {
+    "pt": "Bainha tendínea dos músculos extensores radiais do carpo",
+    "latim": "Vagina tendinum musculorum extensorum carpi radialium"
+  },
+  "Tendon sheath of tibialis anterior": {
+    "pt": "Bainha tendínea do músculo tibial anterior",
+    "latim": "Vagina tendinis musculi tibialis anterioris"
+  },
+  "Posterior lateral nasal branches of sphenopalatine artery.": {
+    "pt": "Ramos nasais posteriores laterais da artéria esfenopalatina",
+    "latim": "Rami nasales posteriores laterales arteriae sphenopalatinae"
+  },
+  "?x": {
+    "pt": "Ramo arterial sem nome (?x)",
+    "revisar": true,
+    "nota": "nome inválido no Z-Anatomy; identificar pela posição no modelo"
+  },
+  "Proximal lateral striate branches": { "pt": "Ramos estriados laterais proximais", "latim": "Rami striati laterales proximales" },
+  "Distal lateral striate branches": { "pt": "Ramos estriados laterais distais", "latim": "Rami striati laterales distales" },
+  "Insular branches of middle cerebral artery (M2-segment)": {
+    "pt": "Ramos insulares da artéria cerebral média (segmento M2)",
+    "latim": "Rami insulares arteriae cerebri mediae"
+  },
+  "Anterior temporal branch": { "pt": "Ramo temporal anterior", "latim": "Ramus temporalis anterior" },
+  "Posterior temporal branch": { "pt": "Ramo temporal posterior", "latim": "Ramus temporalis posterior" },
+  "Branch to angular gyrus": { "pt": "Ramo para o giro angular", "latim": "Ramus gyri angularis" },
+  "Temporo-occipital branch": { "pt": "Ramo temporo-occipital", "latim": "Ramus temporooccipitalis" },
+  "Prefrontal artery": { "pt": "Artéria pré-frontal", "latim": "Arteria prefrontalis" },
+  "Lateral frontobasal artery": { "pt": "Artéria frontobasal lateral", "latim": "Arteria frontobasalis lateralis" },
+  "Posterior parietal artery": { "pt": "Artéria parietal posterior", "latim": "Arteria parietalis posterior" },
+  "Artery of central sulcus": { "pt": "Artéria do sulco central", "latim": "Arteria sulci centralis" },
+  "Artery of precentral sulcus": { "pt": "Artéria do sulco pré-central", "latim": "Arteria sulci precentralis" },
+  "Middle cerebral artery (M3 segment)": { "pt": "Artéria cerebral média (segmento M3)", "latim": "Arteria cerebri media" },
+  "????????": {
+    "pt": "Veia cardíaca sem nome",
+    "revisar": true,
+    "nota": "nome ilegível no Z-Anatomy (\"????????\"); identificar pela posição no modelo"
+  },
+  "Inferior vein of left ventricle (//Posterior '')": {
+    "pt": "Veia inferior do ventrículo esquerdo",
+    "latim": "Vena ventriculi sinistri inferior"
+  },
+  "Node of ligamentum arteriosum": { "pt": "Linfonodo do ligamento arterial", "latim": "Nodus ligamenti arteriosi" },
+  "Node of arch of azygos vein": { "pt": "Linfonodo do arco da veia ázigo", "latim": "Nodus arcus venae azygos" },
+
+  "Cingulate sulcus (Marginal part*)": { "pt": "Sulco do cíngulo (parte marginal)", "latim": "Sulcus cinguli", "revisar": true },
+  "Anterior occipital sulcus*": { "pt": "Sulco occipital anterior", "latim": "Sulcus occipitalis anterior", "revisar": true },
+  "Orbital gyri (Frontomarginal gyrus and sulcus*)": {
+    "pt": "Giros orbitais (giro e sulco frontomarginais)",
+    "latim": "Gyri orbitales",
+    "revisar": true
+  },
+  "Paracentral gyrus and sulcus*": { "pt": "Giro e sulco paracentrais", "revisar": true },
+  "Transverse frontopolar gyrus and sulcus*": { "pt": "Giro e sulco frontopolares transversos", "revisar": true },
+  "Straight gyrus (Gyrus rectus)": { "pt": "Giro reto", "latim": "Gyrus rectus" },
+  "Lat_Fis-ant-Vertical": {
+    "pt": "Sulco lateral (ramo ascendente)",
+    "latim": "Ramus ascendens sulci lateralis",
+    "revisar": true,
+    "nota": "nome técnico interno do Z-Anatomy"
+  },
+  "Lat_Fis-ant-Horizont": {
+    "pt": "Sulco lateral (ramo anterior)",
+    "latim": "Ramus anterior sulci lateralis",
+    "revisar": true,
+    "nota": "nome técnico interno do Z-Anatomy"
+  },
+  "Lat_Fis-post": {
+    "pt": "Sulco lateral (ramo posterior)",
+    "latim": "Ramus posterior sulci lateralis",
+    "revisar": true,
+    "nota": "nome técnico interno do Z-Anatomy"
+  },
+  "Orbital sulci (H-shaped orbital sulci*)": { "pt": "Sulcos orbitais (sulcos orbitais em H)", "latim": "Sulci orbitales", "revisar": true },
+  "Orbital sulci (Lateral Orbital sulcus*)": { "pt": "Sulcos orbitais (sulco orbital lateral)", "latim": "Sulci orbitales", "revisar": true },
+  "Precentral sulcus (inferior part)*": { "pt": "Sulco pré-central (parte inferior)", "latim": "Sulcus precentralis", "revisar": true },
+  "Precentral sulcus (Superior part)*": { "pt": "Sulco pré-central (parte superior)", "latim": "Sulcus precentralis", "revisar": true },
+  "Inferior occipital gyrus and sulcus*": { "pt": "Giro e sulco occipitais inferiores", "revisar": true },
+  "Lateral occipital gyrus (Middle occipital gyrus*)": {
+    "pt": "Giro occipital lateral (giro occipital médio)",
+    "latim": "Gyrus occipitalis lateralis",
+    "revisar": true
+  },
+  "Lunate sulcus": { "pt": "Sulco semilunar", "latim": "Sulcus lunatus" },
+  "Superior temporal gyrus (Lateral part)": { "pt": "Giro temporal superior (parte lateral)", "latim": "Gyrus temporalis superior" },
+  "Medial occipitotemporal gyrus (Parahippocampal*)": {
+    "pt": "Giro occipitotemporal medial (para-hipocampal)",
+    "latim": "Gyrus occipitotemporalis medialis",
+    "revisar": true
+  },
+  "Occipitotemporal sulcus (Lateral part*)": { "pt": "Sulco occipitotemporal (parte lateral)", "latim": "Sulcus occipitotemporalis", "revisar": true },
+  "Insula (Subcentral gyrus and ant. and post. sulci*)": {
+    "pt": "Ínsula (giro subcentral e sulcos anterior e posterior)",
+    "latim": "Insula",
+    "revisar": true
+  },
+  "Cingulate gyrus and sulcus (Middle anterior part)": { "pt": "Giro e sulco do cíngulo (parte média anterior)", "revisar": true },
+  "Cingulate gyrus and sulcus (Middle posterior part)": { "pt": "Giro e sulco do cíngulo (parte média posterior)", "revisar": true },
+  "Cingulate gyrus and sulcus (Posterior dorsal part)": { "pt": "Giro e sulco do cíngulo (parte posterior dorsal)", "revisar": true },
+  "Cingulate gyrus (Posteroventral part*)": { "pt": "Giro do cíngulo (parte posteroventral)", "latim": "Gyrus cinguli", "revisar": true },
+  " Posterior transverse collateral sulcus": { "pt": "Sulco colateral transverso posterior", "revisar": true },
+  "Sulcus interm_prim-Jensen": {
+    "pt": "Sulco intermédio primário (de Jensen)",
+    "latim": "Sulcus intermedius primus",
+    "revisar": true,
+    "nota": "nome técnico interno do Z-Anatomy"
+  },
+  "Central canal'": { "pt": "Canal central", "latim": "Canalis centralis" }
+}
