@@ -40,7 +40,7 @@ export function SearchBar() {
   const showList = open && results.length > 0
 
   return (
-    <div className="absolute left-1/2 top-4 w-[min(28rem,calc(100vw-48rem))] min-w-72 -translate-x-1/2">
+    <div className="absolute left-16 right-3 top-[max(0.75rem,env(safe-area-inset-top))] z-20 lg:left-1/2 lg:right-auto lg:top-4 lg:w-[min(28rem,calc(100vw-48rem))] lg:min-w-72 lg:-translate-x-1/2">
       <input
         type="search"
         role="combobox"
@@ -59,14 +59,14 @@ export function SearchBar() {
         onFocus={() => setOpen(true)}
         onBlur={() => setOpen(false)}
         onKeyDown={onKeyDown}
-        className="w-full rounded-lg bg-slate-900/90 px-4 py-2.5 text-sm text-slate-100 shadow-lg ring-1 ring-white/10 backdrop-blur placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 disabled:opacity-60"
+        className="h-11 w-full rounded-lg bg-slate-900/90 px-4 text-base lg:h-auto lg:py-2.5 lg:text-sm text-slate-100 shadow-lg ring-1 ring-white/10 backdrop-blur placeholder:text-slate-500 focus:outline-none focus:ring-2 focus:ring-sky-400 disabled:opacity-60"
       />
       {showList && (
         <ul
           id={listId}
           role="listbox"
           aria-label="Resultados da busca"
-          className="mt-1 max-h-96 overflow-y-auto rounded-lg bg-slate-900/95 py-1 shadow-xl ring-1 ring-white/10 backdrop-blur"
+          className="mt-1 max-h-[60vh] overflow-y-auto lg:max-h-96 rounded-lg bg-slate-900/95 py-1 shadow-xl ring-1 ring-white/10 backdrop-blur"
         >
           {results.map((entry, i) => (
             <li

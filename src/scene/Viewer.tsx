@@ -1,6 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import { Environment, GizmoHelper, GizmoViewport, Lightformer, OrbitControls } from '@react-three/drei'
-import { Suspense, useCallback, useState } from 'react'
+import { Suspense, useCallback, useEffect, useState } from 'react'
 import type { Box3 } from 'three'
 import { SYSTEM_IDS } from '../data/systems'
 import { useAnatomyStore } from '../store/useAnatomyStore'
@@ -26,7 +26,22 @@ function StudioEnvironment() {
   )
 }
 
+// Mesmo limite do breakpoint lg do Tailwind: abaixo dele a barra de ferramentas ocupa o rodapé inteiro.
+const COMPACT_QUERY = '(max-width: 1023.98px)'
+
+function useCompactLayout() {
+  const [compact, setCompact] = useState(() => window.matchMedia(COMPACT_QUERY).matches)
+  useEffect(() => {
+    const query = window.matchMedia(COMPACT_QUERY)
+    const onChange = () => setCompact(query.matches)
+    query.addEventListener('change', onChange)
+    return () => query.removeEventListener('change', onChange)
+  }, [])
+  return compact
+}
+
 export function Viewer() {
+  const compact = useCompactLayout()
   const requested = useAnatomyStore((s) => s.requested)
   const quality = useAnatomyStore((s) => s.quality)
   const [bounds, setBounds] = useState<Box3 | null>(null)
@@ -61,7 +76,7 @@ export function Viewer() {
       {/* O Hud do gizmo com prioridade 1 desenha a cena principal sozinho. Na qualidade alta quem desenha é o
           EffectComposer (prioridade 1): com o gizmo também em 1 a cena saía duas vezes e o desenho direto
           sobrescrevia o pós-processamento. Ali o gizmo vai para 2 e só desenha o overlay por cima. */}
-      <GizmoHelper alignment="bottom-right" margin={[64, 64]} renderPriority={quality === 'alta' ? 2 : 1}>
+      <GizmoHelper alignment="bottom-right" margin={compact ? [48, 120] : [64, 64]} renderPriority={quality === 'alta' ? 2 : 1}>
         <GizmoViewport />
       </GizmoHelper>
     </Canvas>

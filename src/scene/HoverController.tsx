@@ -127,6 +127,7 @@ export function HoverController() {
       p.ndc.set(((e.clientX - rect.left) / rect.width) * 2 - 1, -((e.clientY - rect.top) / rect.height) * 2 + 1)
     }
     const onMove = (e: PointerEvent) => {
+      if (e.pointerType === 'touch') return
       toNdc(e)
       p.inside = true
       p.dirty = true

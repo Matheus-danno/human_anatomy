@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { PRESETS } from '../data/presets'
 import { SYSTEM_GROUPS, SYSTEMS, type SystemInfo } from '../data/systems'
 import { useAnatomyStore, type Quality } from '../store/useAnatomyStore'
@@ -134,16 +134,33 @@ function QualityToggle() {
 
 type Tab = 'sistemas' | 'estruturas'
 
-export function SystemPanel() {
+export function SystemPanel({ open, onClose }: { open: boolean; onClose: () => void }) {
   const [tab, setTab] = useState<Tab>('sistemas')
+  const selectionKey = useAnatomyStore((s) => s.selection?.key)
+  // Na gaveta (celular), escolher uma estrutura na árvore fecha o painel para mostrar o modelo.
+  useEffect(() => {
+    if (selectionKey) onClose()
+  }, [selectionKey, onClose])
   const tabClass = (t: Tab) =>
     `flex-1 rounded-md px-3 py-1.5 text-xs font-medium ${tab === t ? 'bg-slate-700 text-slate-50' : 'text-slate-400 hover:text-slate-200'}`
 
   return (
-    <aside className="absolute bottom-4 left-4 top-4 flex w-80 flex-col rounded-lg bg-slate-900/85 shadow-lg backdrop-blur">
+    <>
+      {open && <div className="fixed inset-0 z-30 bg-black/50 lg:hidden" onClick={onClose} aria-hidden />}
+      <aside
+        className={`${open ? 'flex' : 'hidden'} fixed inset-y-0 left-0 z-40 w-[min(20rem,85vw)] flex-col rounded-r-lg bg-slate-900/95 pb-[env(safe-area-inset-bottom)] pt-[env(safe-area-inset-top)] shadow-lg backdrop-blur lg:absolute lg:bottom-4 lg:left-4 lg:top-4 lg:z-auto lg:flex lg:w-80 lg:rounded-lg lg:bg-slate-900/85 lg:p-0`}
+      >
       <header className="flex items-center gap-2 px-4 pb-2 pt-4">
         <h1 className="flex-1 text-lg font-semibold">Atlas de Anatomia 3D</h1>
         <QualityToggle />
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="Fechar painel"
+          className="-mr-2 rounded px-2 text-2xl leading-none text-slate-400 hover:bg-slate-800 hover:text-slate-100 lg:hidden"
+        >
+          ×
+        </button>
       </header>
       <div role="tablist" aria-label="Painel" className="mx-4 mb-2 flex gap-1 rounded-lg bg-slate-800/70 p-1">
         <button type="button" role="tab" aria-selected={tab === 'sistemas'} onClick={() => setTab('sistemas')} className={tabClass('sistemas')}>
@@ -166,6 +183,7 @@ export function SystemPanel() {
         Modelos: Z-Anatomy (CC BY-SA 4.0), derivados de BodyParts3D © The Database Center for Life Science
         (CC BY-SA 2.1 JP)
       </footer>
-    </aside>
+      </aside>
+    </>
   )
 }
