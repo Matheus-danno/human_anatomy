@@ -17,12 +17,12 @@ const VIEWS: { id: ViewName; label: string }[] = [
 ]
 
 const button =
-  'rounded-md px-2.5 py-1.5 text-xs font-medium transition-colors focus-visible:outline-2 focus-visible:outline-sky-400 disabled:cursor-default disabled:opacity-40'
+  'shrink-0 whitespace-nowrap rounded-md px-3 py-2.5 text-sm lg:px-2.5 lg:py-1.5 lg:text-xs font-medium transition-colors focus-visible:outline-2 focus-visible:outline-sky-400 disabled:cursor-default disabled:opacity-40'
 const idle = `${button} text-slate-200 hover:bg-slate-700 disabled:hover:bg-transparent`
 const pressed = `${button} bg-sky-500 text-slate-950`
 
 function Divider() {
-  return <span className="mx-1 h-5 w-px bg-slate-700" aria-hidden />
+  return <span className="mx-1 h-5 w-px shrink-0 bg-slate-700" aria-hidden />
 }
 
 export function Toolbar() {
@@ -46,12 +46,12 @@ export function Toolbar() {
   }
 
   return (
-    // Centralizada na área à direita do painel lateral.
-    <div className="pointer-events-none absolute bottom-4 left-[22rem] right-32 flex justify-center">
+    // Celular: rodapé de largura total com rolagem horizontal. Desktop: centralizada à direita do painel lateral.
+    <div className="pointer-events-none absolute inset-x-0 bottom-0 flex justify-center px-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] lg:bottom-4 lg:left-[22rem] lg:right-32 lg:p-0">
       <div
         role="toolbar"
         aria-label="Ferramentas"
-        className="pointer-events-auto flex flex-wrap items-center gap-0.5 rounded-lg bg-slate-900/90 p-1 shadow-lg ring-1 ring-white/10 backdrop-blur"
+        className="pointer-events-auto flex max-w-full flex-nowrap items-center gap-0.5 overflow-x-auto rounded-lg [scrollbar-width:none] lg:flex-wrap lg:overflow-visible bg-slate-900/90 p-1 shadow-lg ring-1 ring-white/10 backdrop-blur"
       >
         <div role="radiogroup" aria-label="Ação do clique" className="flex gap-0.5">
           {TOOLS.map((t) => (

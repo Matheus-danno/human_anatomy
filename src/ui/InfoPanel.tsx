@@ -2,7 +2,7 @@ import { SYSTEM_BY_ID } from '../data/systems'
 import { sameSet, useAnatomyStore } from '../store/useAnatomyStore'
 
 const actionClass =
-  'flex-1 rounded-md px-2 py-2 text-xs font-medium transition-colors focus-visible:outline-2 focus-visible:outline-sky-400'
+  'flex-1 rounded-md px-2 py-2.5 text-sm lg:py-2 lg:text-xs font-medium transition-colors focus-visible:outline-2 focus-visible:outline-sky-400'
 const toggleClass = (on: boolean) =>
   `${actionClass} ${on ? 'bg-sky-500 text-slate-950' : 'bg-slate-800 text-slate-100 hover:bg-slate-700'}`
 
@@ -23,7 +23,7 @@ export function InfoPanel() {
 
   return (
     <aside
-      className="absolute right-4 top-4 z-10 w-80 rounded-lg bg-slate-900/95 p-4 shadow-lg backdrop-blur"
+      className="absolute inset-x-2 bottom-[calc(4rem+env(safe-area-inset-bottom))] z-10 max-h-[45vh] overflow-y-auto rounded-lg bg-slate-900/95 p-4 shadow-lg backdrop-blur lg:inset-x-auto lg:bottom-auto lg:right-4 lg:top-4 lg:max-h-none lg:w-80"
       aria-label="Estrutura selecionada"
     >
       <div className="flex items-start gap-2">
@@ -33,7 +33,7 @@ export function InfoPanel() {
           onClick={clearSelection}
           aria-label="Fechar (Esc)"
           title="Fechar (Esc)"
-          className="rounded px-1.5 text-lg leading-none text-slate-400 hover:bg-slate-800 hover:text-slate-100"
+          className="rounded px-2 text-2xl leading-none lg:px-1.5 lg:text-lg text-slate-400 hover:bg-slate-800 hover:text-slate-100"
         >
           ×
         </button>
