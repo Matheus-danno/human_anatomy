@@ -180,8 +180,13 @@ export function SystemPanel({ open, onClose }: { open: boolean; onClose: () => v
       )}
 
       <footer className="border-t border-slate-800 px-4 py-3 text-xs text-slate-500">
-        Modelos: Z-Anatomy (CC BY-SA 4.0), derivados de BodyParts3D © The Database Center for Life Science
-        (CC BY-SA 2.1 JP)
+        <p className="mb-1 text-slate-400">
+          Desenvolvido por <span className="font-medium text-slate-300">Matheus Andrade Danno</span>
+        </p>
+        <p>
+          Modelos: Z-Anatomy (CC BY-SA 4.0), derivados de BodyParts3D © The Database Center for Life Science
+          (CC BY-SA 2.1 JP)
+        </p>
       </footer>
       </aside>
     </>
