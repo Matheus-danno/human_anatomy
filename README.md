@@ -6,7 +6,7 @@ esqueleto, músculos, vasos, nervos e órgãos), clica em qualquer estrutura par
 ver o nome em português e o termo latino, busca por nome, oculta, isola ou
 deixa estruturas transparentes e compartilha a vista por link.
 
-A usabilidade é inspirada no Zygote Body. Os modelos 3D são do
+Os modelos 3D são do
 [Z-Anatomy](https://www.z-anatomy.com/) (CC BY-SA 4.0), convertidos e
 otimizados para a web por um pipeline próprio (ver
 [Pipeline dos modelos](#pipeline-dos-modelos)).
